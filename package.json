@@ -1,0 +1,20 @@
+{
+  "name": "BOB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suya1068/BOB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suya1068/BOB/issues"
+  },
+  "homepage": "https://github.com/suya1068/BOB#readme"
+}
