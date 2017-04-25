@@ -1,5 +1,5 @@
-function typeCheck_isString(str) {
-	return typeof str === "string";
+function isString(data) {
+	return typeof data === "string";
 }
 
-// shift + v
+module.exports = isString;
