@@ -27,7 +27,7 @@ module.exports = env => {
         context: path.resolve(root, "src"),
         entry: {
             vendor: "vendor",
-            main: "main"
+            app: "app"
         },
         output: env.prod
             ? {
