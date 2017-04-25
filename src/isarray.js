@@ -3,4 +3,5 @@ function isArray(type){
         return true;
     }
 	return false;
+    
 }
