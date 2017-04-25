@@ -1,3 +1,3 @@
 import "react";
 import "react-dom";
-import "prop-tyeps";
+import "prop-types";

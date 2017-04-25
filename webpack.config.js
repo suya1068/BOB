@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const ChunkManifestPlugin = require("chunk-manifest-webpack-plugin");
 const webpackMd5Hash = require("webpack-md5-hash");
@@ -46,12 +45,9 @@ module.exports = env => {
             new HtmlWebpackPlugin({
                 filename: "index.html",
                 template: path.resolve(root, "src/index.html"),
-                chunks: ["manifest", "vendor", "main"],
+                chunks: ["manifest", "vendor", "app"],
                 chunksSortMode: "dependency"
             }),
-            new CopyWebpackPlugin([
-                { from: path.resolve(root, "src/imgs"), to: path.resolve(root, "public/imgs") }
-            ]),
             new webpack.optimize.CommonsChunkPlugin({
                 name: ["vendor", "manifest"],
                 minChunks: Infinity

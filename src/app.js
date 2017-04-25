@@ -2,7 +2,14 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 
+const Hello = props => {
+    return (
+        <h1>TEST</h1>
+    );
+};
+
+
 ReactDOM.render(
-    document.getElementById("root"),
-    <h1>TEST</h1>
+    <Hello />,
+    document.getElementById("root")
 );
