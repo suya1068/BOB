@@ -1,5 +1,10 @@
 {
   "browser": true,
   "testRegex": "test\/.*\\.spec\\.js$",
-  "testEnvironment": "node"
+  "testEnvironment": "node",
+  "modulePaths": ["<rootDir>/src/"],
+  "moduleFileExtensions": ["js", "json", "es6"],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
 }

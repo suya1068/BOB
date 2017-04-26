@@ -1,21 +1,4 @@
 {
-    "presets": [
-        ["env", {
-            "targets": {
-                "browsers": ["last 2 versions"]
-            },
-            "modules": false
-        }],
-        "react"
-    ],
-    "plugins": [
-        "react-hot-loader/babel"
-    ],
-    "env": {
-        "development": {
-            "presets": [
-                "react-hmre"
-            ]
-        }
-    }
+  "presets": ["env"],
+  "plugins": ["transform-export-extensions"]
 }

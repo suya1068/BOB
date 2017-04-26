@@ -1,2 +1,20 @@
+# Project
+coverage/
+public/
+
+# Editors
+.idea/
+.vscode/
+
 # Modules
 node_modules/
+
+# OS
+.DS_Store
+
+# Log
+*.log
+npm-debug.log
+
+# Optional npm cache directory
+.npm

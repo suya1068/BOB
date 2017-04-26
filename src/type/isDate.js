@@ -6,3 +6,5 @@
 function isDate(data) {
 	return data instanceof Date;
 }
+
+export default isDate;
