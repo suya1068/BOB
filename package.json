@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config webpack.config.js --env.dev --watch --progress",
-    "build": "webpack --config webpack.config.js --env.prod",
+    "clean": "rimraf ./public",
+    "dev": "npm run clean && webpack --config webpack.config.js --env.dev --watch --progress",
+    "build": "npm run clean && webpack --config webpack.config.js --env.prod",
     "tdd": "jest --config=jest.config.json --watch",
     "test": "jest --config=jest.config.json --coverage --notify"
   },
