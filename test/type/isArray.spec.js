@@ -1,11 +1,11 @@
 import { type } from "app.js";
 
-describe("The isArrat function ", () => {
-    test("throws an error if the input value is not a Array.", () => {
+describe("The isArray function ", () => {
+    test("throws an error if the input value is not a array.", () => {
         const data1 = undefined;
         const data2 = null;
         const data3 = 1;
-        const data4 = '';
+        const data4 = "";
         const data5 = {};
 
         expect(type.isArray(data1)).toBe(false);

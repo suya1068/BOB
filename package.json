@@ -2,13 +2,14 @@
   "name": "BOB",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/fsn-util.js",
   "scripts": {
     "clean": "rimraf ./public",
     "dev": "npm run clean && webpack --config webpack.config.js --env.dev --watch --progress",
-    "build": "npm run clean && webpack --config webpack.config.js --env.prod",
+    "build": "npm run clean && npm run test && webpack --config webpack.config.js --env.prod",
     "tdd": "jest --config=jest.config.json --watch",
-    "test": "jest --config=jest.config.json --coverage --notify"
+    "test": "jest --config=jest.config.json --coverage --notify",
+    "eslint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,17 @@
   "homepage": "https://github.com/suya1068/BOB#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "^19.0.0",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "^1.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "jest": "^19.0.2",
     "rimraf": "^2.6.1",
     "webpack": "^2.4.1",
