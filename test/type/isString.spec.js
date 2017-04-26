@@ -1,6 +1,5 @@
 import { type } from "app.js";
 
-
 describe("The isString function ", () => {
     test("throws an error if the input value is not a string.", () => {
         const data1 = undefined;
